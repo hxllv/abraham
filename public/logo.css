@@ -1,0 +1,369 @@
+#logo-background {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  background-image: linear-gradient(to right, #37154e, #160955);
+  z-index: -1;
+}
+
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 350px;
+  height: 100%;
+  font-family: Arial Black;
+}
+
+.logo {
+  transform: scale(0.55);
+  width: 500px;
+  height: 500px;
+  background: #481d64;
+  border: 3px solid #d2e4fa;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: -75px;
+  text-shadow: 2px 2px 0px #565454;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.logo .elipse {
+  width: 40px;
+  height: 420px;
+  position: absolute;
+  border: 2px solid #b79d2c;
+  border-radius: 50% 100%;
+  z-index: 5;
+  left: 230px;
+  top: 40px;
+}
+.logo .elipse1,
+.logo .elipse3,
+.logo .elipse5,
+.logo .elipse7,
+.logo .elipse9 {
+  border: 2px solid #133660;
+}
+.logo .elipse1 {
+  transform: rotate(18deg);
+}
+.logo .elipse2 {
+  transform: rotate(36deg);
+}
+.logo .elipse3 {
+  transform: rotate(54deg);
+}
+.logo .elipse4 {
+  transform: rotate(72deg);
+}
+.logo .elipse5 {
+  transform: rotate(90deg);
+}
+.logo .elipse6 {
+  transform: rotate(108deg);
+}
+.logo .elipse7 {
+  transform: rotate(126deg);
+}
+.logo .elipse8 {
+  transform: rotate(144deg);
+}
+.logo .elipse9 {
+  transform: rotate(162deg);
+}
+.logo .elipse10 {
+  transform: rotate(180deg);
+}
+.logo .curved-top {
+  transform: rotate(-84.5deg);
+  font-size: 24px;
+  position: absolute;
+  top: 245px;
+  left: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.logo .curved-top span {
+  height: 250px;
+  position: absolute;
+  width: 25px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+.logo .curved-top .char1 {
+  transform: rotate(10deg);
+}
+.logo .curved-top .char2 {
+  transform: rotate(20deg);
+}
+.logo .curved-top .char3 {
+  transform: rotate(30deg);
+}
+.logo .curved-top .char4 {
+  transform: rotate(40deg);
+}
+.logo .curved-top .char5 {
+  transform: rotate(50deg);
+}
+.logo .curved-top .char6 {
+  transform: rotate(60deg);
+}
+.logo .curved-top .char7 {
+  transform: rotate(70deg);
+}
+.logo .curved-top .char8 {
+  transform: rotate(80deg);
+}
+.logo .curved-top .char9 {
+  transform: rotate(90deg);
+}
+.logo .curved-top .char10 {
+  transform: rotate(100deg);
+}
+.logo .curved-top .char11 {
+  transform: rotate(110deg);
+}
+.logo .curved-top .char12 {
+  transform: rotate(120deg);
+}
+.logo .curved-top .char13 {
+  transform: rotate(130deg);
+}
+.logo .curved-top .char14 {
+  transform: rotate(140deg);
+}
+.logo .curved-top .char15 {
+  transform: rotate(150deg);
+}
+.logo .curved-top .char16 {
+  transform: rotate(160deg);
+}
+.logo .curved-top .char17 {
+  transform: rotate(170deg);
+}
+.logo .curved-top .char18 {
+  transform: rotate(180deg);
+}
+.logo .curved-top .char19 {
+  transform: rotate(190deg);
+}
+.logo .curved-top .char20 {
+  transform: rotate(200deg);
+}
+.logo .inner-circle {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  background: #001621;
+  border: 10px solid #d2e4fa;
+  border-radius: 50%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.logo .dollar {
+  font-family: Garamond, serif;
+  font-size: 320px;
+  position: absolute;
+  z-index: 10;
+  color: #c29212;
+  left: 45%;
+  top: -4%;
+  -webkit-text-stroke: 0.5px black;
+}
+.logo .dollar span {
+  height: 270px;
+  position: absolute;
+  width: 25px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom right;
+}
+.logo .dollar .char1 {
+  transform: rotate(-22.5deg);
+}
+.logo .dollar .char2 {
+  transform: rotate(-45deg);
+}
+.logo .dollar .char3 {
+  transform: rotate(-67.5deg);
+}
+.logo .dollar .char4 {
+  transform: rotate(-90deg);
+}
+.logo .dollar .char5 {
+  transform: rotate(-112.5deg);
+}
+.logo .dollar .char6 {
+  transform: rotate(-135deg);
+}
+.logo .dollar .char7 {
+  transform: rotate(-157.5deg);
+}
+.logo .dollar .char8 {
+  transform: rotate(-180deg);
+}
+.logo .dollar .char9 {
+  transform: rotate(-202.5deg);
+}
+.logo .dollar .char10 {
+  transform: rotate(-225deg);
+}
+.logo .dollar .char11 {
+  transform: rotate(-247.5deg);
+}
+.logo .dollar .char12 {
+  transform: rotate(-270deg);
+}
+.logo .dollar .char13 {
+  transform: rotate(-292.5deg);
+}
+.logo .dollar .char14 {
+  transform: rotate(-315deg);
+}
+.logo .dollar .char15 {
+  transform: rotate(-337.5deg);
+}
+.logo .dollar .char16 {
+  transform: rotate(-360deg);
+}
+.logo .dollar .char17 {
+  transform: rotate(-382.5deg);
+}
+.logo .dollar .char18 {
+  transform: rotate(-405deg);
+}
+.logo .dollar .char19 {
+  transform: rotate(-427.5deg);
+}
+.logo .dollar .char20 {
+  transform: rotate(-450deg);
+}
+.logo .title {
+  font-size: 60px;
+  width: 500px;
+  z-index: 10;
+  position: absolute;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  top: 210px;
+  -webkit-text-stroke: 3px black;
+  text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5),
+    -5px -5px 10px rgba(255, 255, 255, 0.5),
+    -5px 5px 10px rgba(255, 255, 255, 0.5),
+    5px -5px 10px rgba(255, 255, 255, 0.5);
+}
+.logo .curved-bottom {
+  transform: rotate(-95deg);
+  font-size: 25px;
+  position: absolute;
+  bottom: 220px;
+  left: 0;
+  font-weight: bold;
+  color: #fff;
+}
+.logo .curved-bottom span {
+  height: 250px;
+  position: absolute;
+  width: 25px;
+  left: 0;
+  top: 0;
+  transform-origin: bottom center;
+}
+.logo .curved-bottom .char1 {
+  transform: rotate(-10deg);
+}
+.logo .curved-bottom .char2 {
+  transform: rotate(-20deg);
+}
+.logo .curved-bottom .char3 {
+  transform: rotate(-30deg);
+}
+.logo .curved-bottom .char4 {
+  transform: rotate(-40deg);
+}
+.logo .curved-bottom .char5 {
+  transform: rotate(-50deg);
+}
+.logo .curved-bottom .char6 {
+  transform: rotate(-60deg);
+}
+.logo .curved-bottom .char7 {
+  transform: rotate(-70deg);
+}
+.logo .curved-bottom .char8 {
+  transform: rotate(-80deg);
+}
+.logo .curved-bottom .char9 {
+  transform: rotate(-90deg);
+}
+.logo .curved-bottom .char10 {
+  transform: rotate(-100deg);
+}
+.logo .curved-bottom .char11 {
+  transform: rotate(-110deg);
+}
+.logo .curved-bottom .char12 {
+  transform: rotate(-120deg);
+}
+.logo .curved-bottom .char13 {
+  transform: rotate(-130deg);
+}
+.logo .curved-bottom .char14 {
+  transform: rotate(-140deg);
+}
+.logo .curved-bottom .char15 {
+  transform: rotate(-150deg);
+}
+.logo .curved-bottom .char16 {
+  transform: rotate(-160deg);
+}
+.logo .curved-bottom .char17 {
+  transform: rotate(-170deg);
+}
+.logo .curved-bottom .char18 {
+  transform: rotate(-180deg);
+}
+.logo .curved-bottom .char19 {
+  transform: rotate(-190deg);
+}
+.logo .curved-bottom .char20 {
+  transform: rotate(-200deg);
+}
+
+/*# sourceMappingURL=logo.css.map */
+@media only screen and (max-width: 1025px) {
+  .logo {
+    transform: scale(0.55);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    justify-self: center;
+
+    transform: scale(0.3);
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 50%;
+    right: 0;
+
+    transform: translateX(-50%) scale(0.3);
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 30vh;
+  }
+}

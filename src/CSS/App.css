@@ -1,0 +1,291 @@
+body {
+  background-color: #160955;
+}
+
+.temph1 {
+  position: absolute;
+  color: white;
+}
+
+/* html,
+body {
+  height: 100vh;
+} */
+
+/* #root,
+#container {
+  height: 100vh;
+} */
+
+#root {
+  margin-left: 350px;
+}
+
+*:focus {
+  outline: none;
+}
+
+.app {
+  margin: 0 10vw;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1% 49% 50%;
+}
+
+.grid-element {
+  color: #d9e0f0;
+  text-align: center;
+
+  position: relative;
+
+  justify-self: center;
+  align-self: center;
+
+  display: flex;
+  align-items: center;
+
+  width: calc(100% - 1rem - 4px);
+  min-height: 3rem;
+  /*   padding: 2rem 0; */
+  margin: 0.5rem;
+}
+
+.grid-element-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d9e0f0;
+  border-radius: 40px;
+}
+
+.question {
+  background-image: linear-gradient(to right, #0a79c1, #06267d, #0a79c1);
+
+  justify-content: center;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.question > h3 {
+  padding: 0.5rem;
+  word-break: break-word;
+}
+
+.answer {
+  cursor: pointer;
+  width: 100%;
+}
+
+.answer:hover {
+  filter: brightness(85%);
+}
+
+.answer > h3 {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.answer > h3 > span {
+  color: #f59c00;
+  padding: 3px;
+}
+
+.answer > h3 > .answer-text {
+  color: #d9e0f0;
+}
+
+.answer > h3 > .diamond {
+  color: #d9e0f0 !important;
+  font-size: x-small;
+}
+
+.answer-left-col {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-image: linear-gradient(to right, #0a79c1, #06267d);
+}
+
+.answer-right-col {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-image: linear-gradient(to left, #0a79c1, #06267d);
+}
+
+.answer-correct-left {
+  background-image: linear-gradient(to right, #2fcc27, #2cc525) !important;
+}
+
+.answer-correct-right {
+  background-image: linear-gradient(to left, #2fcc27, #2cc525) !important;
+}
+
+.answer-selected-left {
+  background-image: linear-gradient(to right, #f59c00, #f38100);
+}
+
+.answer-selected-right {
+  background-image: linear-gradient(to left, #f59c00, #f38100);
+}
+
+:is(.answer-correct-left, .answer-correct-right, .answer-selected-left, .answer-selected-right)
+  h3
+  :is(.answer-letter, .answer-text) {
+  color: black;
+}
+
+.show {
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.hide {
+  transition: opacity 0.5s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.grid > svg {
+  z-index: -1;
+  width: 100vw;
+  height: 2px;
+
+  position: relative;
+  left: calc(-350px + -10vw);
+
+  align-self: center;
+}
+
+.grid > svg > line {
+  stroke: #d9e0f0;
+  stroke-width: 4px;
+}
+
+.img-container {
+  transition: opacity 0.5s;
+  padding: 1rem;
+
+  height: 40%;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-height: 100%;
+  max-width: 60%;
+
+  border-radius: 1rem;
+}
+
+.help-buttons {
+  padding-top: 10%;
+
+  display: flex;
+  justify-content: center;
+
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+button {
+  background-image: radial-gradient(#06267d, #0a79c1);
+
+  border: 3px solid white;
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+
+  min-width: 100px;
+  height: 60px;
+
+  margin: 5px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(85%);
+}
+
+button > svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+button > svg > line {
+  stroke: white;
+  stroke-width: 2px;
+}
+
+pattern > line {
+  stroke: white;
+  stroke-width: 1px;
+}
+
+button > svg > :is(polygon, circle, ellipse) {
+  fill: #ffffff00;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.hair {
+  fill: white;
+}
+
+.cross {
+  stroke: red;
+  stroke-width: 4px;
+}
+
+.cross-hidden {
+  stroke-width: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app {
+    margin: 0 5vw;
+  }
+
+  .grid > svg {
+    left: calc(-350px + -5vw);
+  }
+
+  .grid {
+    grid-template-rows: auto auto auto 8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #root {
+    margin-left: 0px;
+  }
+
+  .grid > svg {
+    left: -5vw;
+  }
+
+  .help-buttons {
+    margin: 0;
+    transform: scale(0.7);
+  }
+
+  .grid-element {
+    font-size: smaller;
+  }
+
+  .img-container {
+    padding: 0.5rem;
+  }
+
+  img {
+    max-height: 25vh;
+  }
+}
