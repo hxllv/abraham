@@ -4,7 +4,6 @@ import Answer from "./Components/Answer";
 import Help from "./Components/Help";
 import imgDefault from "./Imgs/default.png";
 import img1 from "./Imgs/test.jpeg";
-import img2 from "./Imgs/test1.jpg";
 import "./CSS/App.css";
 import * as data from "./Questions/Questions.json";
 
@@ -24,7 +23,6 @@ class App extends Component {
     fiftyUsedThisQ: false,
     imgs: {
       img0: img1,
-      img1001: img2,
     },
   };
 
