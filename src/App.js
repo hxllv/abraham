@@ -13,7 +13,7 @@ import * as data from "./Questions/Questions.json";
 class App extends Component {
   state = {
     questions: data.default,
-    showState: 5,
+    showState: 0,
     showCorrect: false,
     selected: null,
     currentQNum: 0,
@@ -36,7 +36,7 @@ class App extends Component {
     if (this.state.currentQNum + 1 >= this.state.questions.length) return;
 
     this.setState({
-      showState: 5,
+      showState: 0,
     });
     const timer = setTimeout(() => {
       this.setState({
@@ -45,8 +45,7 @@ class App extends Component {
         selected: null,
         fiftyUsedThisQ: false,
       });
-    }, 3);
-    /* 503 */
+    }, 503);
     return () => clearTimeout(timer);
   }
 
@@ -63,10 +62,9 @@ class App extends Component {
   }
 
   showCorrect() {
-    this.setState({ showCorrect: true });
-    /* if (this.state.selected !== null) {
+    if (this.state.selected !== null) {
       this.setState({ showCorrect: true });
-    } */
+    }
   }
 
   selectAnswer(key) {
@@ -124,13 +122,21 @@ class App extends Component {
         if (!askHostUsed) this.setState({ askHostUsed: true });
         return;
       case "fifty":
-        /* if (!fiftyUsed) */
-        this.setState({ fiftyUsed: true, fiftyUsedThisQ: true });
+        if (!fiftyUsed)
+          this.setState({ fiftyUsed: true, fiftyUsedThisQ: true });
         return;
       default:
         return;
     }
   };
+
+  componentDidUpdate() {
+    this._container.focus();
+  }
+
+  componentDidMount() {
+    this._container.focus();
+  }
 
   render() {
     const {
@@ -167,9 +173,15 @@ class App extends Component {
     };
 
     return (
-      <div id="container" tabIndex="0" onKeyDown={this.keyPressHandler}>
+      <div
+        id="container"
+        tabIndex="0"
+        onKeyDown={this.keyPressHandler}
+        autofocus
+        ref={(c) => (this._container = c)}
+      >
         <div className="app">
-          <h1 className="temph1">{currentQNum}</h1>
+          {/* <h1 className="temph1">{currentQNum}</h1> */}
           <div
             className={
               "img-container " + (imgs["img" + currentQNum] ? "show" : "hide")
