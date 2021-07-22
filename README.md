@@ -32,3 +32,7 @@ Razlaga atributov:
   - answer1 - 4: Odgovori na vprašanje (tekst),
   - correctAnswer: Kateri odgovor je pravilen (1 indexed),
   - half: Kateri odgovori se pri koriščenju polovičke skrijejo (če je vrednost na mestu `i` enaka 1, se odgovor `i+1` (zarad 1 index-a odgovorov) skrije).
+
+## Logo
+
+https://codepen.io/MyXoToD/pen/IDnfk
