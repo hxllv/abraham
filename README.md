@@ -16,6 +16,13 @@ Tipke:
   - `c`: prikaže pravilen odgovor (pod pogoju, da je prikazano vprašanje in vsi odgovori, ter da je že izbran odgovor),
   - `1` - `4`: izbira odgovora (je možno tudi z miško).
 
+## Slike
+
+Slike naj bodo shranjene v `src/Imgs/` in se jih v `App.js` importa z: `import img from "./Imgs/foo.bar"`.
+
+v `App.js` state-u se jih nastavi za vprašanje, da se v object `imgs` pripiše nov key-value pair, kjer je key v formatu `img{št. vprašanja}`, in value enak importani sliki.
+Vprašanja so 0 indexed, torej če želimo sliko pri prvem vprašanju, nastavimo `imgs: { img0: img, },`.
+
 ## Vprašanja
 
 Vprašanja so shranjena v `src/Questions/Questions.json`.
