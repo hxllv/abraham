@@ -1,182 +1,29 @@
 [
   {
-    "question": "Ob kateri uri ste bili rojeni?",
-    "answer1": "16:46",
-    "answer2": "12:03",
-    "answer3": "23:32",
-    "answer4": "09:06",
+    "question": "test q 1?",
+    "answer1": "A",
+    "answer2": "B",
+    "answer3": "C",
+    "answer4": "D",
     "correctAnswer": 3,
     "half": [1, 0, 0, 1]
   },
   {
-    "question": "Katera po vrsti je rojena Dominika Rozoničnik?",
-    "answer1": "Prva",
-    "answer2": "Peta",
-    "answer3": "Sedma",
-    "answer4": "Tretja",
+    "question": "test q 2?",
+    "answer1": "1",
+    "answer2": "2",
+    "answer3": "3",
+    "answer4": "4",
     "correctAnswer": 4,
     "half": [0, 1, 1, 0]
   },
   {
-    "question": "Kakšen je bil naslov knjige, ki sta jo s sestro Marjeto zašili v vzglavnik?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
+    "question": "test q 3?",
+    "answer1": "X",
+    "answer2": "Y",
+    "answer3": "Z",
+    "answer4": "W",
     "correctAnswer": 1,
     "half": [0, 1, 0, 1]
   },
-  {
-    "question": "Na kaj se spomnete, ko pomislite na ''kremico za ritko''?",
-    "answer1": "Svojega prvorojenca",
-    "answer2": "Razbito steklo",
-    "answer3": "Penaten",
-    "answer4": "Hemoroide",
-    "correctAnswer": 3,
-    "half": [0, 1, 0, 0]
-  },
-  {
-    "question": "Kako je bilo ime punčki, s katero sta se v zgodnji mladosti igrali s sestro Marjeto?",
-    "answer1": "Francka",
-    "answer2": "Micka",
-    "answer3": "Frida",
-    "answer4": "Marija",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Kateri člani so sestavljali skupino Duran Duran leta xxxx?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Česa od naštetega niste naredili sestri Poloni?",
-    "answer1": "Odsekali prst",
-    "answer2": "Zaprli v okno",
-    "answer3": "Odnesla v gozd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Kdaj si spoznala Matjaža Filčiča?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "S katerim delom telesa je Kristus branil gol?",
-    "answer1": "Levo roko",
-    "answer2": "Desno roko",
-    "answer3": "Levo nogo",
-    "answer4": "Desno nogo",
-    "correctAnswer": 2,
-    "half": [0, 0, 1, 1]
-  },
-  {
-    "question": "Katero sadje je bilo na morju najbolj nezaželjeno?",
-    "answer1": "Lubenica",
-    "answer2": "Papaja",
-    "answer3": "Banana",
-    "answer4": "Melona",
-    "correctAnswer": 4,
-    "half": [1, 0, 1, 0]
-  },
-  {
-    "question": "Katero knjigo je brala Urša, ko se je Tomi podelal v bazen?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Kje je bil Tomi, ko sta se z Matjažem vrnila iz ''gledanja valov''?",
-    "answer1": "Pod blazino",
-    "answer2": "Ob blazini",
-    "answer3": "Nad blazino",
-    "answer4": "V blazini",
-    "correctAnswer": 2,
-    "half": [0, 0, 1, 1]
-  },
-  {
-    "question": "Kako se imenuje najbolj slavna Islandska žgana pijača ?",
-    "answer1": "Brennivin",
-    "answer2": "Isfjord",
-    "answer3": "Kronan",
-    "answer4": "Salmiakki",
-    "correctAnswer": 1,
-    "half": [0, 0, 1, 1]
-  },
-  {
-    "question": "Kaj pomeni, če se ti na nebo zalepi hostja?",
-    "answer1": "Da si grešnik",
-    "answer2": "Da bo deževalo",
-    "answer3": "Da bodo obiski",
-    "answer4": "Da ti je Bog odpustil",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Katerega leta je nastala tale slika?",
-    "answer1": "2011",
-    "answer2": "2013",
-    "answer3": "2009",
-    "answer4": "2010",
-    "correctAnswer": 3,
-    "half": [1, 1, 0, 0]
-  },
-  {
-    "question": "Kaj je decima?",
-    "answer1": "Pravljično bitje",
-    "answer2": "Pošast",
-    "answer3": "Poezijska kitica",
-    "answer4": "Merska enota",
-    "correctAnswer": 1,
-    "half": [0, 1, 0, 1]
-  },
-  {
-    "question": "S katero številko je bila označena parcela prvega kampiranja v San Polo?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Kakšna je razlika v letih med tvojim najstarejšim in najmlajšim nečakom?",
-    "answer1": "tbd",
-    "answer2": "tbd",
-    "answer3": "tbd",
-    "answer4": "tbd",
-    "correctAnswer": 4,
-    "half": [0, 1, 1, 0]
-  },
-  {
-    "question": "Katerega leta svojega življenja si se najbolj posluževala aplikaciji za internetno komuniciranje?",
-    "answer1": "2009",
-    "answer2": "2017",
-    "answer3": "2010",
-    "answer4": "2020",
-    "correctAnswer": 3,
-    "half": [0, 1, 0, 1]
-  },
-  {
-    "question": "Kaj je bil Nace Tavčer?",
-    "answer1": "Kolo",
-    "answer2": "Tomos",
-    "answer3": "Piaggio",
-    "answer4": "Moped",
-    "correctAnswer": 4,
-    "half": [1, 1, 0, 0]
-  }
 ]
