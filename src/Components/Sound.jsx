@@ -7,15 +7,16 @@ import play from "../Sound/play.mp3";
 const Sound = (props) => {
   const { showState, showCorrect, correctAnswer, selected, playSoundResult } =
     props;
+  const vol = 0.1;
 
   const [playS] = useSound(play, {
-    volume: 0.1,
+    volume: vol,
   });
   const [winS] = useSound(win, {
-    volume: 0.1,
+    volume: vol,
   });
   const [loseS] = useSound(lose, {
-    volume: 0.1,
+    volume: vol,
   });
 
   if (showState === 0) playS();
