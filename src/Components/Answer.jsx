@@ -23,7 +23,7 @@ const Answer = (props) => {
     showCorrect,
     fiftyUsed,
     fiftyUsedThisQ,
-    fiftyArr,
+    half,
   } = answerProps;
 
   const answerClassLeft = "grid-element-border answer answer-left-col ";
@@ -35,9 +35,7 @@ const Answer = (props) => {
       onClick={(e) => props.onClick(answerNum)}
       className={
         "grid-element" +
-        (fiftyUsed && fiftyUsedThisQ && fiftyArr[answerNum - 1]
-          ? " hide"
-          : "") +
+        (fiftyUsed && fiftyUsedThisQ && half[answerNum - 1] ? " hide" : "") +
         (showState >= answerNum + 1 ? " show" : " hide")
       }
     >

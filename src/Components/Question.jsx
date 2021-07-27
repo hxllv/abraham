@@ -1,5 +1,6 @@
 const Question = (props) => {
-  const { currentQ, showState } = props;
+  const { question, showState } = props;
+
   return (
     <div
       className={
@@ -7,7 +8,7 @@ const Question = (props) => {
         (showState >= 1 ? "show" : "hide")
       }
     >
-      <h3>{currentQ}</h3>
+      <h3>{question}</h3>
     </div>
   );
 };

@@ -2,8 +2,10 @@ import React, { Component } from "react";
 import Question from "./Components/Question";
 import Answer from "./Components/Answer";
 import Help from "./Components/Help";
+import Sound from "./Components/Sound";
 import imgDefault from "./Imgs/default.png";
 import img1 from "./Imgs/test.jpeg";
+
 import "./CSS/App.css";
 import * as data from "./Questions/Questions.json";
 
@@ -12,8 +14,9 @@ import * as data from "./Questions/Questions.json";
 class App extends Component {
   state = {
     questions: data.default,
-    showState: 0,
+    showState: -1,
     showCorrect: false,
+    playSoundResult: true,
     selected: null,
     currentQNum: 0,
     lastHelpQNum: -1,
@@ -34,7 +37,7 @@ class App extends Component {
     if (this.state.currentQNum + 1 >= this.state.questions.length) return;
 
     this.setState({
-      showState: 0,
+      showState: -1,
     });
     const timer = setTimeout(() => {
       this.setState({
@@ -42,6 +45,7 @@ class App extends Component {
         showCorrect: false,
         selected: null,
         fiftyUsedThisQ: false,
+        playSoundResult: true,
       });
     }, 503);
     return () => clearTimeout(timer);
@@ -62,6 +66,9 @@ class App extends Component {
   showCorrect() {
     if (this.state.selected !== null) {
       this.setState({ showCorrect: true });
+      setTimeout(() => {
+        this.setState({ playSoundResult: false });
+      }, 20);
     }
   }
 
@@ -142,6 +149,7 @@ class App extends Component {
       currentQNum,
       selected,
       showCorrect,
+      playSoundResult,
       imgs,
       showState,
       askAudienceUsed,
@@ -149,13 +157,17 @@ class App extends Component {
       fiftyUsed,
       fiftyUsedThisQ,
     } = this.state;
-    const currentQ = questions[currentQNum].question;
-    const answer1 = questions[currentQNum].answer1;
-    const answer2 = questions[currentQNum].answer2;
-    const answer3 = questions[currentQNum].answer3;
-    const answer4 = questions[currentQNum].answer4;
-    const correctAnswer = questions[currentQNum].correctAnswer;
-    const fiftyArr = questions[currentQNum].half;
+
+    const {
+      question,
+      answer1,
+      answer2,
+      answer3,
+      answer4,
+      correctAnswer,
+      half,
+    } = questions[currentQNum];
+
     const image = imgs["img" + currentQNum]
       ? imgs["img" + currentQNum]
       : imgs["img" + (currentQNum - 1)];
@@ -163,7 +175,7 @@ class App extends Component {
     const answerProps = {
       fiftyUsed: fiftyUsed,
       fiftyUsedThisQ: fiftyUsedThisQ,
-      fiftyArr: fiftyArr,
+      half: half,
       showState: showState,
       selected: selected,
       correctAnswer: correctAnswer,
@@ -178,6 +190,13 @@ class App extends Component {
         autofocus
         ref={(c) => (this._container = c)}
       >
+        <Sound
+          showState={showState}
+          showCorrect={showCorrect}
+          correctAnswer={correctAnswer}
+          selected={selected}
+          playSoundResult={playSoundResult}
+        />
         <div className="app">
           {/* <h1 className="temph1">{currentQNum}</h1> */}
           <div
@@ -193,7 +212,7 @@ class App extends Component {
               <line x1="0" y1="0" x2="100%" y2="0"></line>
             </svg>
 
-            <Question showState={showState} currentQ={currentQ} />
+            <Question showState={showState} question={question} />
 
             <svg>
               <line x1="0" y1="0" x2="100%" y2="0"></line>
