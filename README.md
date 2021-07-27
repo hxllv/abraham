@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Milijonar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ustvarjeno z React za skeč pri praznovanju abrahama.
 
-## Available Scripts
+## Zagon
 
-In the project directory, you can run:
+Po clone-anju se node moduli namestijo z `npm i`.
+Aplikacija se zažene z `npm start`.
 
-### `npm start`
+## Uporaba
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Tipke:
+  - `s`: z vsakim pritiskom se prikaže nov element sklopa vprašanja in odgovorov,
+  - `n`: naslednje vprašanje,
+  - `b`: prejšnje vprašanje,
+  - `c`: prikaže pravilen odgovor (pod pogoju, da je prikazano vprašanje in vsi odgovori, ter da je že izbran odgovor),
+  - `1` - `4`: izbira odgovora (je možno tudi z miško).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Slike
 
-### `npm test`
+Slike naj bodo shranjene v `src/Imgs/` in se jih v `App.js` importa z: `import img from "./Imgs/foo.bar"`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+v `App.js` state-u se jih nastavi za vprašanje, da se v object `imgs` pripiše nov key-value pair, kjer je key v formatu `img{št. vprašanja}`, in value enak importani sliki.
+Vprašanja so 0 indexed, torej če želimo sliko pri prvem vprašanju, nastavimo `imgs: { img0: img, },`.
 
-### `npm run build`
+## Vprašanja
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Vprašanja so shranjena v `src/Questions/Questions.json`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Razlaga atributov:
+  - question: Vprašanje (tekst),
+  - answer1 - 4: Odgovori na vprašanje (tekst),
+  - correctAnswer: Kateri odgovor je pravilen (1 indexed),
+  - half: Kateri odgovori se pri koriščenju polovičke skrijejo (če je vrednost na mestu `i` enaka 1, se odgovor `i+1` (zarad 1 index-a odgovorov) skrije).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Logo
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://codepen.io/MyXoToD/pen/IDnfk
